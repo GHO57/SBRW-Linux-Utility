@@ -1,0 +1,53 @@
+# ===============================
+# Logs
+# ===============================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===============================
+# Node / React
+# ===============================
+node_modules
+dist
+dist-ssr
+*.local
+*.env
+
+# ===============================
+# Tauri / Rust
+# ===============================
+# Rust build artifacts
+target
+src-tauri/target
+
+# Generated Tauri files
+src-tauri/gen
+
+# Rust backup files
+*.rs.bk
+
+# Rust embedded resources
+src-tauri/resources
+
+# ===============================
+# Editor directories and files
+# ===============================
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===============================
+# OS files
+# ===============================
+Thumbs.db

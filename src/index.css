@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-light: #eee;
+    --color-dark: #222;
+    --color-primary: #ff0000;
+    --color-primary-hover: #ee0000;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    @apply bg-primary text-white duration-100 transition-all hover:bg-primary-hover;
+}
+
+/* Custom shimmer animation */
+@layer utilities {
+    @keyframes shimmer {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    .animate-shimmer {
+        animation: shimmer 2s infinite linear;
+    }
+}
